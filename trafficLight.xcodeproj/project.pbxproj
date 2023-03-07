@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12CB44B029B73D1300FE53D1 /* trafficLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */; };
+		12CB44B429B73D1400FE53D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44B329B73D1400FE53D1 /* Assets.xcassets */; };
+		12CB44BF29B73D3000FE53D1 /* DividerHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44BE29B73D3000FE53D1 /* DividerHorizontal.swift */; };
+		12CB44C329B73D3500FE53D1 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44C129B73D3500FE53D1 /* Diary.swift */; };
+		12CB44C429B73D3500FE53D1 /* DiariesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44C229B73D3500FE53D1 /* DiariesModel.swift */; };
+		12CB44C729B73D4200FE53D1 /* UINavigationController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44C629B73D4200FE53D1 /* UINavigationController+extensions.swift */; };
+		12CB44CB29B73D4900FE53D1 /* DiaryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44C929B73D4900FE53D1 /* DiaryListView.swift */; };
+		12CB44CC29B73D4900FE53D1 /* DiaryListCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44CA29B73D4900FE53D1 /* DiaryListCore.swift */; };
+		12CB44D029B73D4E00FE53D1 /* DiaryDetailCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44CE29B73D4E00FE53D1 /* DiaryDetailCore.swift */; };
+		12CB44D129B73D4E00FE53D1 /* DiaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44CF29B73D4E00FE53D1 /* DiaryDetailView.swift */; };
+		12CB44D729B73F5E00FE53D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44D529B73F5E00FE53D1 /* Preview Assets.xcassets */; };
+		12CB44DA29B73FC400FE53D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44D929B73FC400FE53D1 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12CB44AC29B73D1300FE53D1 /* trafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trafficLightApp.swift; sourceTree = "<group>"; };
+		12CB44B329B73D1400FE53D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12CB44BE29B73D3000FE53D1 /* DividerHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerHorizontal.swift; sourceTree = "<group>"; };
+		12CB44C129B73D3500FE53D1 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
+		12CB44C229B73D3500FE53D1 /* DiariesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiariesModel.swift; sourceTree = "<group>"; };
+		12CB44C629B73D4200FE53D1 /* UINavigationController+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+extensions.swift"; sourceTree = "<group>"; };
+		12CB44C929B73D4900FE53D1 /* DiaryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryListView.swift; sourceTree = "<group>"; };
+		12CB44CA29B73D4900FE53D1 /* DiaryListCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryListCore.swift; sourceTree = "<group>"; };
+		12CB44CE29B73D4E00FE53D1 /* DiaryDetailCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryDetailCore.swift; sourceTree = "<group>"; };
+		12CB44CF29B73D4E00FE53D1 /* DiaryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryDetailView.swift; sourceTree = "<group>"; };
+		12CB44D529B73F5E00FE53D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12CB44D929B73FC400FE53D1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12CB44A929B73D1300FE53D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12CB44A329B73D1300FE53D1 = {
+			isa = PBXGroup;
+			children = (
+				12CB44AE29B73D1300FE53D1 /* trafficLight */,
+				12CB44AD29B73D1300FE53D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12CB44AD29B73D1300FE53D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44AC29B73D1300FE53D1 /* trafficLight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12CB44AE29B73D1300FE53D1 /* trafficLight */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */,
+				12CB44C029B73D3500FE53D1 /* Model */,
+				12CB44BD29B73D3000FE53D1 /* DesignSystem */,
+				12CB44C829B73D4900FE53D1 /* DiaryList */,
+				12CB44CD29B73D4E00FE53D1 /* DiaryDetail */,
+				12CB44C529B73D4200FE53D1 /* Extensions */,
+				12CB44D829B73FAD00FE53D1 /* Resource */,
+				12CB44D629B73F5E00FE53D1 /* Preview Content */,
+			);
+			path = trafficLight;
+			sourceTree = "<group>";
+		};
+		12CB44BD29B73D3000FE53D1 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44BE29B73D3000FE53D1 /* DividerHorizontal.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		12CB44C029B73D3500FE53D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44C129B73D3500FE53D1 /* Diary.swift */,
+				12CB44C229B73D3500FE53D1 /* DiariesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12CB44C529B73D4200FE53D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44C629B73D4200FE53D1 /* UINavigationController+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		12CB44C829B73D4900FE53D1 /* DiaryList */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44C929B73D4900FE53D1 /* DiaryListView.swift */,
+				12CB44CA29B73D4900FE53D1 /* DiaryListCore.swift */,
+			);
+			path = DiaryList;
+			sourceTree = "<group>";
+		};
+		12CB44CD29B73D4E00FE53D1 /* DiaryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44CE29B73D4E00FE53D1 /* DiaryDetailCore.swift */,
+				12CB44CF29B73D4E00FE53D1 /* DiaryDetailView.swift */,
+			);
+			path = DiaryDetail;
+			sourceTree = "<group>";
+		};
+		12CB44D629B73F5E00FE53D1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44D529B73F5E00FE53D1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12CB44D829B73FAD00FE53D1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44B329B73D1400FE53D1 /* Assets.xcassets */,
+				12CB44D929B73FC400FE53D1 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12CB44AB29B73D1300FE53D1 /* trafficLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12CB44BA29B73D1400FE53D1 /* Build configuration list for PBXNativeTarget "trafficLight" */;
+			buildPhases = (
+				12CB44A829B73D1300FE53D1 /* Sources */,
+				12CB44A929B73D1300FE53D1 /* Frameworks */,
+				12CB44AA29B73D1300FE53D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trafficLight;
+			packageProductDependencies = (
+			);
+			productName = trafficLight;
+			productReference = 12CB44AC29B73D1300FE53D1 /* trafficLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12CB44A429B73D1300FE53D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					12CB44AB29B73D1300FE53D1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 12CB44A729B73D1300FE53D1 /* Build configuration list for PBXProject "trafficLight" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12CB44A329B73D1300FE53D1;
+			packageReferences = (
+			);
+			productRefGroup = 12CB44AD29B73D1300FE53D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12CB44AB29B73D1300FE53D1 /* trafficLight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12CB44AA29B73D1300FE53D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CB44DA29B73FC400FE53D1 /* LaunchScreen.storyboard in Resources */,
+				12CB44D729B73F5E00FE53D1 /* Preview Assets.xcassets in Resources */,
+				12CB44B429B73D1400FE53D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12CB44A829B73D1300FE53D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CB44D129B73D4E00FE53D1 /* DiaryDetailView.swift in Sources */,
+				12CB44C429B73D3500FE53D1 /* DiariesModel.swift in Sources */,
+				12CB44D029B73D4E00FE53D1 /* DiaryDetailCore.swift in Sources */,
+				12CB44BF29B73D3000FE53D1 /* DividerHorizontal.swift in Sources */,
+				12CB44C729B73D4200FE53D1 /* UINavigationController+extensions.swift in Sources */,
+				12CB44CC29B73D4900FE53D1 /* DiaryListCore.swift in Sources */,
+				12CB44B029B73D1300FE53D1 /* trafficLightApp.swift in Sources */,
+				12CB44CB29B73D4900FE53D1 /* DiaryListView.swift in Sources */,
+				12CB44C329B73D3500FE53D1 /* Diary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		12CB44B829B73D1400FE53D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12CB44B929B73D1400FE53D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12CB44BB29B73D1400FE53D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"trafficLight/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = trafficLight/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.green.trafficLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12CB44BC29B73D1400FE53D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"trafficLight/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = trafficLight/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.green.trafficLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12CB44A729B73D1300FE53D1 /* Build configuration list for PBXProject "trafficLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CB44B829B73D1400FE53D1 /* Debug */,
+				12CB44B929B73D1400FE53D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12CB44BA29B73D1400FE53D1 /* Build configuration list for PBXNativeTarget "trafficLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CB44BB29B73D1400FE53D1 /* Debug */,
+				12CB44BC29B73D1400FE53D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12CB44A429B73D1300FE53D1 /* Project object */;
+}
