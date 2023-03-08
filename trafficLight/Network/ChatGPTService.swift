@@ -8,5 +8,5 @@
 import ChatGPTSwift
 
 final class ChatGPTService {
-  let api = ChatGPTAPI(apiKey: "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")
+  let api = ChatGPTAPI(apiKey: "API 키 입력하세요.")
 }
