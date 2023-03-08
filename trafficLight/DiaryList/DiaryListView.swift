@@ -13,35 +13,51 @@ struct DiaryListView: View {
   
   var body: some View {
     NavigationView {
-      VStack(alignment: .leading, spacing: 10) {
-        TitleView()
+      ZStack {
+        // 일기 작성 뷰 이동 링크
+        WritingViewNavigationLink(diaryListCore: diaryListCore)
         
-        ScrollView {
-          VStack (alignment: .leading) {
-            ForEach(diariesModel.diaries, id: \.self) { diary in
-              NavigationLink(
-                destination: DiaryDetailView(diaryDetailCore: .init(diary: diary))
-              ) {
-                DiaryView(
-                  title: diary.title,
-                  content: diary.content
-                )
+        // 네비게이션 뷰
+        VStack(alignment: .leading, spacing: 10) {
+          TrafficLightNavigationBar(
+            isDisplayWritingButton: true,
+            writingButtonAction: {
+              diaryListCore.setIsMoveToDiaryWritingMode(true)
+            }
+          )
+          
+          TitleView()
+          
+          // 일기 리스트 스크롤 뷰
+          ScrollView {
+            VStack (alignment: .leading) {
+              ForEach(diariesModel.diaries, id: \.self) { diary in
+                NavigationLink(
+                  destination: DiaryDetailView(
+                    diaryDetailCore: .init(diary: diary)
+                  )
+                ) {
+                  DiaryView(
+                    title: diary.title,
+                    content: diary.content
+                  )
+                }
+                .padding(.bottom, 10)
               }
-              .padding(.bottom, 10)
             }
           }
+          
+          Spacer()
+          
+          ADBannerView(diaryListCore: diaryListCore)
         }
-        
-        Spacer()
-        
-        ADBannerView(diaryListCore: diaryListCore)
+        .padding(.all, 20)
       }
-      .padding(.all, 20)
     }
   }
 }
 
-// 목록 타이틀
+// MARK: - 목록 타이틀
 private struct TitleView: View {
   var body: some View {
     HStack {
@@ -56,7 +72,7 @@ private struct TitleView: View {
   }
 }
 
-// 일기 셀 뷰
+// MARK: - 일기 셀 뷰
 private struct DiaryView: View {
   var title: String
   var content: String
@@ -78,7 +94,7 @@ private struct DiaryView: View {
   }
 }
 
-// 광고 배너 뷰
+// MARK: - 광고 배너 뷰
 private struct ADBannerView: View {
   @ObservedObject var diaryListCore: DiaryListCore
   
@@ -96,5 +112,26 @@ private struct ADBannerView: View {
           .clipped()
       }
     )
+  }
+}
+
+// MARK: - 일기 작성 뷰 이동 링크
+private struct WritingViewNavigationLink: View {
+  @ObservedObject var diaryListCore: DiaryListCore
+  
+  var body: some View {
+    NavigationLink(
+      "",
+      isActive: $diaryListCore.isMoveToDiaryWritingMode
+    ) {
+      DiaryWritingView(
+        diaryWritingCore: .init(
+          diariesModel: .shared,
+          service: diaryListCore.service
+        )
+      )
+    }
+    .frame(maxHeight: 0)
+    .hidden()
   }
 }

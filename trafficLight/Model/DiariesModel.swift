@@ -8,9 +8,11 @@
 import Combine
 
 final class DiariesModel: ObservableObject {
+  static let shared = DiariesModel(diaries: .init())
+  
   @Published var diaries: [Diary]
   
-  init(diaries: [Diary]) {
+  private init(diaries: [Diary]) {
     self.diaries = diaries
   }
 }

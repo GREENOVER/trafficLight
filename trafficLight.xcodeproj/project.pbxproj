@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1227843529B7FD6900ED7491 /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1227843429B7FD6900ED7491 /* ChatGPTSwift */; };
+		1227843829B7FDDC00ED7491 /* ChatGPTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843729B7FDDC00ED7491 /* ChatGPTService.swift */; };
+		1227843B29B80D5800ED7491 /* DiaryWritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843A29B80D5800ED7491 /* DiaryWritingView.swift */; };
+		1227843D29B80D6000ED7491 /* DiaryWritingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843C29B80D6000ED7491 /* DiaryWritingCore.swift */; };
+		1227843F29B80ECD00ED7491 /* TrafficLightNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843E29B80ECD00ED7491 /* TrafficLightNavigationBar.swift */; };
 		12CB44B029B73D1300FE53D1 /* trafficLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */; };
 		12CB44B429B73D1400FE53D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44B329B73D1400FE53D1 /* Assets.xcassets */; };
 		12CB44BF29B73D3000FE53D1 /* DividerHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44BE29B73D3000FE53D1 /* DividerHorizontal.swift */; };
@@ -22,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1227843729B7FDDC00ED7491 /* ChatGPTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTService.swift; sourceTree = "<group>"; };
+		1227843A29B80D5800ED7491 /* DiaryWritingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryWritingView.swift; sourceTree = "<group>"; };
+		1227843C29B80D6000ED7491 /* DiaryWritingCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryWritingCore.swift; sourceTree = "<group>"; };
+		1227843E29B80ECD00ED7491 /* TrafficLightNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightNavigationBar.swift; sourceTree = "<group>"; };
 		12CB44AC29B73D1300FE53D1 /* trafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trafficLightApp.swift; sourceTree = "<group>"; };
 		12CB44B329B73D1400FE53D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,12 +51,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1227843529B7FD6900ED7491 /* ChatGPTSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1227843629B7FDC500ED7491 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1227843729B7FDDC00ED7491 /* ChatGPTService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1227843929B80D4800ED7491 /* DiaryWriting */ = {
+			isa = PBXGroup;
+			children = (
+				1227843A29B80D5800ED7491 /* DiaryWritingView.swift */,
+				1227843C29B80D6000ED7491 /* DiaryWritingCore.swift */,
+			);
+			path = DiaryWriting;
+			sourceTree = "<group>";
+		};
 		12CB44A329B73D1300FE53D1 = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */,
+				1227843629B7FDC500ED7491 /* Network */,
 				12CB44C029B73D3500FE53D1 /* Model */,
 				12CB44BD29B73D3000FE53D1 /* DesignSystem */,
 				12CB44C829B73D4900FE53D1 /* DiaryList */,
 				12CB44CD29B73D4E00FE53D1 /* DiaryDetail */,
+				1227843929B80D4800ED7491 /* DiaryWriting */,
 				12CB44C529B73D4200FE53D1 /* Extensions */,
 				12CB44D829B73FAD00FE53D1 /* Resource */,
 				12CB44D629B73F5E00FE53D1 /* Preview Content */,
@@ -83,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				12CB44BE29B73D3000FE53D1 /* DividerHorizontal.swift */,
+				1227843E29B80ECD00ED7491 /* TrafficLightNavigationBar.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -116,8 +146,8 @@
 		12CB44CD29B73D4E00FE53D1 /* DiaryDetail */ = {
 			isa = PBXGroup;
 			children = (
-				12CB44CE29B73D4E00FE53D1 /* DiaryDetailCore.swift */,
 				12CB44CF29B73D4E00FE53D1 /* DiaryDetailView.swift */,
+				12CB44CE29B73D4E00FE53D1 /* DiaryDetailCore.swift */,
 			);
 			path = DiaryDetail;
 			sourceTree = "<group>";
@@ -156,6 +186,7 @@
 			);
 			name = trafficLight;
 			packageProductDependencies = (
+				1227843429B7FD6900ED7491 /* ChatGPTSwift */,
 			);
 			productName = trafficLight;
 			productReference = 12CB44AC29B73D1300FE53D1 /* trafficLight.app */;
@@ -186,6 +217,7 @@
 			);
 			mainGroup = 12CB44A329B73D1300FE53D1;
 			packageReferences = (
+				1227843329B7FD6900ED7491 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
 			);
 			productRefGroup = 12CB44AD29B73D1300FE53D1 /* Products */;
 			projectDirPath = "";
@@ -218,11 +250,15 @@
 				12CB44C429B73D3500FE53D1 /* DiariesModel.swift in Sources */,
 				12CB44D029B73D4E00FE53D1 /* DiaryDetailCore.swift in Sources */,
 				12CB44BF29B73D3000FE53D1 /* DividerHorizontal.swift in Sources */,
+				1227843F29B80ECD00ED7491 /* TrafficLightNavigationBar.swift in Sources */,
 				12CB44C729B73D4200FE53D1 /* UINavigationController+extensions.swift in Sources */,
 				12CB44CC29B73D4900FE53D1 /* DiaryListCore.swift in Sources */,
 				12CB44B029B73D1300FE53D1 /* trafficLightApp.swift in Sources */,
+				1227843B29B80D5800ED7491 /* DiaryWritingView.swift in Sources */,
 				12CB44CB29B73D4900FE53D1 /* DiaryListView.swift in Sources */,
 				12CB44C329B73D3500FE53D1 /* Diary.swift in Sources */,
+				1227843829B7FDDC00ED7491 /* ChatGPTService.swift in Sources */,
+				1227843D29B80D6000ED7491 /* DiaryWritingCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +459,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1227843329B7FD6900ED7491 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1227843429B7FD6900ED7491 /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1227843329B7FD6900ED7491 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12CB44A429B73D1300FE53D1 /* Project object */;
 }

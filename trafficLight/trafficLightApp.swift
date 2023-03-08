@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct trafficLightApp: App {
-  var diariesModel = DiariesModel.stub
+  @StateObject var diariesModel = DiariesModel.shared
   
   var body: some Scene {
     WindowGroup {
-      DiaryListView(diaryListCore: .init())
+      DiaryListView(diaryListCore: .init(service: ChatGPTService()))
         .environmentObject(diariesModel)
     }
   }

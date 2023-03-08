@@ -14,3 +14,6 @@ final class DiaryDetailCore: ObservableObject {
     self.diary = diary
   }
 }
+
+extension DiaryDetailCore {
+}
