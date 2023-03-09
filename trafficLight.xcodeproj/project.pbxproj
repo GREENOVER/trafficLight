@@ -12,6 +12,9 @@
 		1227843B29B80D5800ED7491 /* DiaryWritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843A29B80D5800ED7491 /* DiaryWritingView.swift */; };
 		1227843D29B80D6000ED7491 /* DiaryWritingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843C29B80D6000ED7491 /* DiaryWritingCore.swift */; };
 		1227843F29B80ECD00ED7491 /* TrafficLightNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843E29B80ECD00ED7491 /* TrafficLightNavigationBar.swift */; };
+		125EB8DC29B9AB7200D7877E /* HumanVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EB8DB29B9AB7200D7877E /* HumanVerificationView.swift */; };
+		125EB8DE29B9AB7B00D7877E /* HumanVerificationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EB8DD29B9AB7B00D7877E /* HumanVerificationCore.swift */; };
+		125EC07129B9BF13002834D0 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EC07029B9BF13002834D0 /* ImageInfo.swift */; };
 		12CB44B029B73D1300FE53D1 /* trafficLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */; };
 		12CB44B429B73D1400FE53D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44B329B73D1400FE53D1 /* Assets.xcassets */; };
 		12CB44BF29B73D3000FE53D1 /* DividerHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44BE29B73D3000FE53D1 /* DividerHorizontal.swift */; };
@@ -31,6 +34,9 @@
 		1227843A29B80D5800ED7491 /* DiaryWritingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryWritingView.swift; sourceTree = "<group>"; };
 		1227843C29B80D6000ED7491 /* DiaryWritingCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryWritingCore.swift; sourceTree = "<group>"; };
 		1227843E29B80ECD00ED7491 /* TrafficLightNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightNavigationBar.swift; sourceTree = "<group>"; };
+		125EB8DB29B9AB7200D7877E /* HumanVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanVerificationView.swift; sourceTree = "<group>"; };
+		125EB8DD29B9AB7B00D7877E /* HumanVerificationCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanVerificationCore.swift; sourceTree = "<group>"; };
+		125EC07029B9BF13002834D0 /* ImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
 		12CB44AC29B73D1300FE53D1 /* trafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trafficLightApp.swift; sourceTree = "<group>"; };
 		12CB44B329B73D1400FE53D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +81,30 @@
 			path = DiaryWriting;
 			sourceTree = "<group>";
 		};
+		125EB8DA29B9AADE00D7877E /* HumanVerification */ = {
+			isa = PBXGroup;
+			children = (
+				125EB8DB29B9AB7200D7877E /* HumanVerificationView.swift */,
+				125EB8DD29B9AB7B00D7877E /* HumanVerificationCore.swift */,
+			);
+			path = HumanVerification;
+			sourceTree = "<group>";
+		};
+		125EB8DF29B9ABE800D7877E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44C829B73D4900FE53D1 /* DiaryList */,
+				12CB44CD29B73D4E00FE53D1 /* DiaryDetail */,
+				1227843929B80D4800ED7491 /* DiaryWriting */,
+				125EB8DA29B9AADE00D7877E /* HumanVerification */,
+				12CB44BD29B73D3000FE53D1 /* DesignSystem */,
+				12CB44C029B73D3500FE53D1 /* Model */,
+				1227843629B7FDC500ED7491 /* Network */,
+				12CB44C529B73D4200FE53D1 /* Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		12CB44A329B73D1300FE53D1 = {
 			isa = PBXGroup;
 			children = (
@@ -95,13 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */,
-				1227843629B7FDC500ED7491 /* Network */,
-				12CB44C029B73D3500FE53D1 /* Model */,
-				12CB44BD29B73D3000FE53D1 /* DesignSystem */,
-				12CB44C829B73D4900FE53D1 /* DiaryList */,
-				12CB44CD29B73D4E00FE53D1 /* DiaryDetail */,
-				1227843929B80D4800ED7491 /* DiaryWriting */,
-				12CB44C529B73D4200FE53D1 /* Extensions */,
+				125EB8DF29B9ABE800D7877E /* Source */,
 				12CB44D829B73FAD00FE53D1 /* Resource */,
 				12CB44D629B73F5E00FE53D1 /* Preview Content */,
 			);
@@ -122,6 +146,7 @@
 			children = (
 				12CB44C129B73D3500FE53D1 /* Diary.swift */,
 				12CB44C229B73D3500FE53D1 /* DiariesModel.swift */,
+				125EC07029B9BF13002834D0 /* ImageInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12CB44D129B73D4E00FE53D1 /* DiaryDetailView.swift in Sources */,
+				125EB8DC29B9AB7200D7877E /* HumanVerificationView.swift in Sources */,
 				12CB44C429B73D3500FE53D1 /* DiariesModel.swift in Sources */,
 				12CB44D029B73D4E00FE53D1 /* DiaryDetailCore.swift in Sources */,
 				12CB44BF29B73D3000FE53D1 /* DividerHorizontal.swift in Sources */,
@@ -254,6 +280,8 @@
 				12CB44C729B73D4200FE53D1 /* UINavigationController+extensions.swift in Sources */,
 				12CB44CC29B73D4900FE53D1 /* DiaryListCore.swift in Sources */,
 				12CB44B029B73D1300FE53D1 /* trafficLightApp.swift in Sources */,
+				125EC07129B9BF13002834D0 /* ImageInfo.swift in Sources */,
+				125EB8DE29B9AB7B00D7877E /* HumanVerificationCore.swift in Sources */,
 				1227843B29B80D5800ED7491 /* DiaryWritingView.swift in Sources */,
 				12CB44CB29B73D4900FE53D1 /* DiaryListView.swift in Sources */,
 				12CB44C329B73D3500FE53D1 /* Diary.swift in Sources */,
