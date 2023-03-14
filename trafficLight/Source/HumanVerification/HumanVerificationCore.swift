@@ -12,6 +12,7 @@ final class HumanVerificationCore: ObservableObject {
   @Published var selectedImageInfo: ImageInfo?
   @Published var isDisplayNeedSelectedAlert: Bool
   @Published var isDisplayHumanVerificationView: Bool
+  @Published var saveDiaryValue: SaveDiaryValue = .shared
   var isAvailableSubmitButton: Bool {
     return selectedImageInfo != nil
   }
@@ -42,6 +43,7 @@ extension HumanVerificationCore {
     if let selectedImageInfo = selectedImageInfo {
       if checkIsCorrect(answer: selectedImageInfo) {
         setIsDisplayHumanVerificationView(false)
+        saveDiaryValue.isSave = true
       } else {
         setIsDisplayNeedSelectedAlert(true)
       }

@@ -127,7 +127,8 @@ private struct WritingViewNavigationLink: View {
       DiaryWritingView(
         diaryWritingCore: .init(
           diariesModel: .shared,
-          service: diaryListCore.service
+          service: diaryListCore.service,
+          humanVerificationView: .init(humanVerificationCore: .init())
         )
       )
     }

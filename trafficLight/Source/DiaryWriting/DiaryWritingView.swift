@@ -10,6 +10,8 @@ import SwiftUI
 struct DiaryWritingView: View {
   @Environment(\.presentationMode) var presentationMode
   @StateObject var diaryWritingCore: DiaryWritingCore
+  @StateObject var humanVerificationCore: HumanVerificationCore = HumanVerificationCore()
+  @StateObject var saveDiaryValue: SaveDiaryValue = .shared
   
   var body: some View {
     VStack(spacing: 10) {
@@ -33,7 +35,7 @@ struct DiaryWritingView: View {
       Spacer()
       
       // 일기 저장 버튼
-      SaveDiaryButton(diaryWritingCore: diaryWritingCore)
+      SaveDiaryButton(diaryWritingCore: diaryWritingCore, humanVerificationCore: humanVerificationCore)
     }
     .navigationBarHidden(true)
     .alert(isPresented: $diaryWritingCore.isDisplaySaveCompletedAlert) {
@@ -43,6 +45,21 @@ struct DiaryWritingView: View {
         dismissButton: .default(Text("확인"))
       )
     }
+    .trafficPopUp(
+      isPresented: $humanVerificationCore.isDisplayHumanVerificationView,
+      opacity: 0.7,
+      content: {
+        HumanVerificationView(humanVerificationCore: humanVerificationCore)
+      }
+    )
+    .onChange(
+      of: saveDiaryValue.isSave,
+      perform: { isSave in
+        if isSave {
+          diaryWritingCore.saveDiary()
+        }
+      }
+    )
   }
 }
 
@@ -104,12 +121,13 @@ private struct AIResponseView: View {
 // MARK: - 일기 저장 버튼
 private struct SaveDiaryButton: View {
   @ObservedObject var diaryWritingCore: DiaryWritingCore
+  @ObservedObject var humanVerificationCore: HumanVerificationCore
   
   var body: some View {
     if diaryWritingCore.isFinishedRequest {
       Button(
         action: {
-          diaryWritingCore.saveDiary()
+          humanVerificationCore.isDisplayHumanVerificationView = true
         },
         label: {
           Text("저장하기")

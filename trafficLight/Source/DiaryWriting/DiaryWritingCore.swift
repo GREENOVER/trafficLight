@@ -15,15 +15,19 @@ final class DiaryWritingCore: ObservableObject {
   @Published var isDisplayProgressView: Bool = false
   @Published var isDisplaySaveCompletedAlert: Bool = false
   @Published var diariesModel: DiariesModel
+  @Published var humanVerificationView: HumanVerificationView
+  @Published var saveDiaryValue: SaveDiaryValue = .shared
   
   let service: ChatGPTService
   
   init(
     diariesModel: DiariesModel,
-    service: ChatGPTService
+    service: ChatGPTService,
+    humanVerificationView: HumanVerificationView
   ) {
     self.diariesModel = diariesModel
     self.service = service
+    self.humanVerificationView = humanVerificationView
   }
 }
 
@@ -76,6 +80,8 @@ extension DiaryWritingCore {
     setPost("")
     setIsFinishedRequest(false)
     setIsDisplayCompletedAlert(true)
+    
+    saveDiaryValue.isSave = false
   }
   
   // MARK: - 프로퍼티 셋업

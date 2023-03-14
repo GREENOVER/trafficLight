@@ -15,6 +15,7 @@
 		125EB8DC29B9AB7200D7877E /* HumanVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EB8DB29B9AB7200D7877E /* HumanVerificationView.swift */; };
 		125EB8DE29B9AB7B00D7877E /* HumanVerificationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EB8DD29B9AB7B00D7877E /* HumanVerificationCore.swift */; };
 		125EC07129B9BF13002834D0 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EC07029B9BF13002834D0 /* ImageInfo.swift */; };
+		12A7AFE629BFFBB900CA0324 /* SaveDiaryValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7AFE529BFFBB900CA0324 /* SaveDiaryValue.swift */; };
 		12CB44B029B73D1300FE53D1 /* trafficLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */; };
 		12CB44B429B73D1400FE53D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44B329B73D1400FE53D1 /* Assets.xcassets */; };
 		12CB44BF29B73D3000FE53D1 /* DividerHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44BE29B73D3000FE53D1 /* DividerHorizontal.swift */; };
@@ -27,6 +28,7 @@
 		12CB44D129B73D4E00FE53D1 /* DiaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB44CF29B73D4E00FE53D1 /* DiaryDetailView.swift */; };
 		12CB44D729B73F5E00FE53D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44D529B73F5E00FE53D1 /* Preview Assets.xcassets */; };
 		12CB44DA29B73FC400FE53D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44D929B73FC400FE53D1 /* LaunchScreen.storyboard */; };
+		12D3A19C29BACF0C00E1417F /* TrafficPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D3A19B29BACF0C00E1417F /* TrafficPopUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,7 @@
 		125EB8DB29B9AB7200D7877E /* HumanVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanVerificationView.swift; sourceTree = "<group>"; };
 		125EB8DD29B9AB7B00D7877E /* HumanVerificationCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanVerificationCore.swift; sourceTree = "<group>"; };
 		125EC07029B9BF13002834D0 /* ImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
+		12A7AFE529BFFBB900CA0324 /* SaveDiaryValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDiaryValue.swift; sourceTree = "<group>"; };
 		12CB44AC29B73D1300FE53D1 /* trafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12CB44AF29B73D1300FE53D1 /* trafficLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trafficLightApp.swift; sourceTree = "<group>"; };
 		12CB44B329B73D1400FE53D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		12CB44CF29B73D4E00FE53D1 /* DiaryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryDetailView.swift; sourceTree = "<group>"; };
 		12CB44D529B73F5E00FE53D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12CB44D929B73FC400FE53D1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12D3A19B29BACF0C00E1417F /* TrafficPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficPopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 			children = (
 				12CB44BE29B73D3000FE53D1 /* DividerHorizontal.swift */,
 				1227843E29B80ECD00ED7491 /* TrafficLightNavigationBar.swift */,
+				12D3A19B29BACF0C00E1417F /* TrafficPopUp.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			children = (
 				12CB44C129B73D3500FE53D1 /* Diary.swift */,
 				12CB44C229B73D3500FE53D1 /* DiariesModel.swift */,
+				12A7AFE529BFFBB900CA0324 /* SaveDiaryValue.swift */,
 				125EC07029B9BF13002834D0 /* ImageInfo.swift */,
 			);
 			path = Model;
@@ -283,8 +289,10 @@
 				125EC07129B9BF13002834D0 /* ImageInfo.swift in Sources */,
 				125EB8DE29B9AB7B00D7877E /* HumanVerificationCore.swift in Sources */,
 				1227843B29B80D5800ED7491 /* DiaryWritingView.swift in Sources */,
+				12A7AFE629BFFBB900CA0324 /* SaveDiaryValue.swift in Sources */,
 				12CB44CB29B73D4900FE53D1 /* DiaryListView.swift in Sources */,
 				12CB44C329B73D3500FE53D1 /* Diary.swift in Sources */,
+				12D3A19C29BACF0C00E1417F /* TrafficPopUp.swift in Sources */,
 				1227843829B7FDDC00ED7491 /* ChatGPTService.swift in Sources */,
 				1227843D29B80D6000ED7491 /* DiaryWritingCore.swift in Sources */,
 			);

@@ -19,11 +19,13 @@ struct HumanVerificationView: View {
       SelectImageGridView(humanVerificationCore: humanVerificationCore)
       
       // 제출 버튼
-      SubmitButtonView(humanVerificationCore: humanVerificationCore)
+      if humanVerificationCore.selectedImageInfo != nil {
+        SubmitButtonView(humanVerificationCore: humanVerificationCore)
+      }
     }
-    .padding(.horizontal, 30)
-    .background(Color.yellow)
+    .border(Color.gray, width: 2)
     .cornerRadius(16)
+    .padding(.horizontal, 30)
     .alert(isPresented: $humanVerificationCore.isDisplayNeedSelectedAlert) {
       Alert(
         title: Text("실패!"),
@@ -40,6 +42,10 @@ private struct HeaderView: View {
   
   var body: some View {
     HStack {
+      Text("노래하는 원숭이를 찾아보세요.")
+        .font(.title)
+        .foregroundColor(.red)
+      
       Spacer()
       
       Button(
@@ -84,23 +90,19 @@ private struct EachImageView: View {
   
   var body: some View {
     ZStack {
-      Button(
-        action: {
-          humanVerificationCore.setSelectedImageInfo(imageInfo: imageInfo)
-        },
-        label: {
-          Image(imageInfo.imageName)
-            .resizable()
-            .frame(width: 100, height: 100)
-        }
-      )
-      .opacity(imageInfo.isSelect ? 0.5 : 1.0)
+      Image(imageInfo.imageName)
+        .resizable()
+        .frame(width: 100, height: 100)
+        .opacity(imageInfo.imageName == humanVerificationCore.selectedImageInfo?.imageName ? 0.3 : 1)
       
       if imageInfo.imageName == humanVerificationCore.selectedImageInfo?.imageName {
         Image("selectIcon")
           .resizable()
           .frame(width: 50, height: 50)
       }
+    }
+    .onTapGesture {
+      humanVerificationCore.setSelectedImageInfo(imageInfo: imageInfo)
     }
   }
 }
@@ -117,12 +119,10 @@ private struct SubmitButtonView: View {
       label: {
         Text("제출 해버릴까보다")
           .font(.title)
-          .foregroundColor(.white)
+          .foregroundColor(.green)
           .padding(.horizontal, 20)
           .padding(.vertical, 10)
-          .background(Color.green)
       }
     )
-    .disabled(!humanVerificationCore.isAvailableSubmitButton)
   }
 }
