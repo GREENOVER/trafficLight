@@ -51,6 +51,7 @@ private struct HeaderView: View {
       Button(
         action: {
           humanVerificationCore.setIsDisplayHumanVerificationView(false)
+          humanVerificationCore.setSelectedImageInfo(nil)
         },
         label: {
           Image("closeIcon")

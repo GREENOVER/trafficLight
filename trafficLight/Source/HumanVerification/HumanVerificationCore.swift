@@ -44,6 +44,7 @@ extension HumanVerificationCore {
       if checkIsCorrect(answer: selectedImageInfo) {
         setIsDisplayHumanVerificationView(false)
         saveDiaryValue.isSave = true
+        setSelectedImageInfo(nil)
       } else {
         setIsDisplayNeedSelectedAlert(true)
       }
@@ -75,5 +76,10 @@ extension HumanVerificationCore {
   @MainActor
   func setIsDisplayHumanVerificationView(_ isDisplay: Bool) {
     isDisplayHumanVerificationView = isDisplay
+  }
+  
+  @MainActor
+  func setSelectedImageInfo(_ imageInfo: ImageInfo?) {
+    selectedImageInfo = imageInfo
   }
 }
