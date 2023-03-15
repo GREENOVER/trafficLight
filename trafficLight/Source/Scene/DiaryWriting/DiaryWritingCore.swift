@@ -20,6 +20,10 @@ final class DiaryWritingCore: ObservableObject {
   
   let service: ChatGPTService
   
+  // 커스텀 네트워킹 구축
+  let customService: CustomChatGPTService = .live
+  private var cancellables = Set<AnyCancellable>()
+  
   init(
     diariesModel: DiariesModel,
     service: ChatGPTService,
@@ -113,5 +117,30 @@ extension DiaryWritingCore {
   @MainActor
   func setIsDisplayCompletedAlert(_ isDisplay: Bool) {
     isDisplaySaveCompletedAlert = isDisplay
+  }
+  
+  // MARK: - 커스텀 ChatGPT 네트워킹
+  @MainActor
+  func requestCustomChatGPT(
+    prompt: String,
+    temperature: String = "0.7",
+    maxTokens: String = "100",
+    stop: String = "\n"
+  ) {
+    customService.postChatRequest(prompt, temperature, maxTokens, stop)
+      .sink(receiveCompletion: { result in
+        switch result {
+        case .failure(let error):
+          // 에러 처리
+          dump(error.localizedDescription)
+          
+        case .finished:
+          break
+        }
+      }, receiveValue: { [weak self] response in
+        // 응답 값 주입
+        self?.post = response.completions.first?.text ?? ""
+      })
+      .store(in: &cancellables)
   }
 }
