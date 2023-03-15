@@ -1,6 +1,6 @@
 //
 //  ChatGPTService.swift
-//  Network
+//  Services
 //
 //  Created by GREEN on 2023/03/08.
 //

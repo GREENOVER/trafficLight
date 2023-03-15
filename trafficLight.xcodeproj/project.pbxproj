@@ -12,6 +12,12 @@
 		1227843B29B80D5800ED7491 /* DiaryWritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843A29B80D5800ED7491 /* DiaryWritingView.swift */; };
 		1227843D29B80D6000ED7491 /* DiaryWritingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843C29B80D6000ED7491 /* DiaryWritingCore.swift */; };
 		1227843F29B80ECD00ED7491 /* TrafficLightNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227843E29B80ECD00ED7491 /* TrafficLightNavigationBar.swift */; };
+		1253CADB29C13EC9000781A5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1253CADA29C13EC9000781A5 /* Alamofire */; };
+		1253CADD29C13ED1000781A5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253CADC29C13ED1000781A5 /* Router.swift */; };
+		1253CADF29C13ED7000781A5 /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253CADE29C13ED7000781A5 /* RouterManager.swift */; };
+		1253CAE129C13EE4000781A5 /* BasicResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253CAE029C13EE4000781A5 /* BasicResponseDTO.swift */; };
+		1253CAE329C13EFA000781A5 /* CustomChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253CAE229C13EFA000781A5 /* CustomChatGPTAPI.swift */; };
+		1253CAE729C1400B000781A5 /* ErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253CAE629C1400B000781A5 /* ErrorFactory.swift */; };
 		125EB8DC29B9AB7200D7877E /* HumanVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EB8DB29B9AB7200D7877E /* HumanVerificationView.swift */; };
 		125EB8DE29B9AB7B00D7877E /* HumanVerificationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EB8DD29B9AB7B00D7877E /* HumanVerificationCore.swift */; };
 		125EC07129B9BF13002834D0 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125EC07029B9BF13002834D0 /* ImageInfo.swift */; };
@@ -29,6 +35,9 @@
 		12CB44D729B73F5E00FE53D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44D529B73F5E00FE53D1 /* Preview Assets.xcassets */; };
 		12CB44DA29B73FC400FE53D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CB44D929B73FC400FE53D1 /* LaunchScreen.storyboard */; };
 		12D3A19C29BACF0C00E1417F /* TrafficPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D3A19B29BACF0C00E1417F /* TrafficPopUp.swift */; };
+		12E4DCB229C144680044D7D4 /* ChatGPTRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4DCB129C144680044D7D4 /* ChatGPTRequestDTO.swift */; };
+		12E4DCB529C1465D0044D7D4 /* ChatGPTResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4DCB429C1465D0044D7D4 /* ChatGPTResponseDTO.swift */; };
+		12E4DCB729C146FC0044D7D4 /* CustomChatGPTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4DCB629C146FC0044D7D4 /* CustomChatGPTService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +45,11 @@
 		1227843A29B80D5800ED7491 /* DiaryWritingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryWritingView.swift; sourceTree = "<group>"; };
 		1227843C29B80D6000ED7491 /* DiaryWritingCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryWritingCore.swift; sourceTree = "<group>"; };
 		1227843E29B80ECD00ED7491 /* TrafficLightNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightNavigationBar.swift; sourceTree = "<group>"; };
+		1253CADC29C13ED1000781A5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		1253CADE29C13ED7000781A5 /* RouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterManager.swift; sourceTree = "<group>"; };
+		1253CAE029C13EE4000781A5 /* BasicResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResponseDTO.swift; sourceTree = "<group>"; };
+		1253CAE229C13EFA000781A5 /* CustomChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChatGPTAPI.swift; sourceTree = "<group>"; };
+		1253CAE629C1400B000781A5 /* ErrorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorFactory.swift; sourceTree = "<group>"; };
 		125EB8DB29B9AB7200D7877E /* HumanVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanVerificationView.swift; sourceTree = "<group>"; };
 		125EB8DD29B9AB7B00D7877E /* HumanVerificationCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanVerificationCore.swift; sourceTree = "<group>"; };
 		125EC07029B9BF13002834D0 /* ImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
@@ -54,6 +68,9 @@
 		12CB44D529B73F5E00FE53D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12CB44D929B73FC400FE53D1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12D3A19B29BACF0C00E1417F /* TrafficPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficPopUp.swift; sourceTree = "<group>"; };
+		12E4DCB129C144680044D7D4 /* ChatGPTRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTRequestDTO.swift; sourceTree = "<group>"; };
+		12E4DCB429C1465D0044D7D4 /* ChatGPTResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTResponseDTO.swift; sourceTree = "<group>"; };
+		12E4DCB629C146FC0044D7D4 /* CustomChatGPTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChatGPTService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +79,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1227843529B7FD6900ED7491 /* ChatGPTSwift in Frameworks */,
+				1253CADB29C13EC9000781A5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1227843629B7FDC500ED7491 /* Network */ = {
+		1227843629B7FDC500ED7491 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1227843729B7FDDC00ED7491 /* ChatGPTService.swift */,
+				1253CAD729C13EA7000781A5 /* _Foundation */,
+				1253CAD629C13E88000781A5 /* ChatGPT */,
 			);
-			path = Network;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		1227843929B80D4800ED7491 /* DiaryWriting */ = {
@@ -83,6 +102,62 @@
 				1227843C29B80D6000ED7491 /* DiaryWritingCore.swift */,
 			);
 			path = DiaryWriting;
+			sourceTree = "<group>";
+		};
+		1253CAD529C13E2B000781A5 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44C829B73D4900FE53D1 /* DiaryList */,
+				12CB44CD29B73D4E00FE53D1 /* DiaryDetail */,
+				1227843929B80D4800ED7491 /* DiaryWriting */,
+				125EB8DA29B9AADE00D7877E /* HumanVerification */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		1253CAD629C13E88000781A5 /* ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				1253CAE229C13EFA000781A5 /* CustomChatGPTAPI.swift */,
+				12E4DCB629C146FC0044D7D4 /* CustomChatGPTService.swift */,
+				1227843729B7FDDC00ED7491 /* ChatGPTService.swift */,
+			);
+			path = ChatGPT;
+			sourceTree = "<group>";
+		};
+		1253CAD729C13EA7000781A5 /* _Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				1253CAD829C13EB2000781A5 /* Router */,
+				1253CAE029C13EE4000781A5 /* BasicResponseDTO.swift */,
+			);
+			path = _Foundation;
+			sourceTree = "<group>";
+		};
+		1253CAD829C13EB2000781A5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1253CADC29C13ED1000781A5 /* Router.swift */,
+				1253CADE29C13ED7000781A5 /* RouterManager.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1253CAE429C13FD2000781A5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1253CAE529C13FF9000781A5 /* ErrorHandling */,
+				12CB44C529B73D4200FE53D1 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1253CAE529C13FF9000781A5 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				1253CAE629C1400B000781A5 /* ErrorFactory.swift */,
+			);
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 		125EB8DA29B9AADE00D7877E /* HumanVerification */ = {
@@ -97,14 +172,11 @@
 		125EB8DF29B9ABE800D7877E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				12CB44C829B73D4900FE53D1 /* DiaryList */,
-				12CB44CD29B73D4E00FE53D1 /* DiaryDetail */,
-				1227843929B80D4800ED7491 /* DiaryWriting */,
-				125EB8DA29B9AADE00D7877E /* HumanVerification */,
+				1253CAD529C13E2B000781A5 /* Scene */,
 				12CB44BD29B73D3000FE53D1 /* DesignSystem */,
-				12CB44C029B73D3500FE53D1 /* Model */,
-				1227843629B7FDC500ED7491 /* Network */,
-				12CB44C529B73D4200FE53D1 /* Extensions */,
+				12CB44C029B73D3500FE53D1 /* Models */,
+				1227843629B7FDC500ED7491 /* Services */,
+				1253CAE429C13FD2000781A5 /* Common */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -146,15 +218,14 @@
 			path = DesignSystem;
 			sourceTree = "<group>";
 		};
-		12CB44C029B73D3500FE53D1 /* Model */ = {
+		12CB44C029B73D3500FE53D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				12CB44C129B73D3500FE53D1 /* Diary.swift */,
-				12CB44C229B73D3500FE53D1 /* DiariesModel.swift */,
-				12A7AFE529BFFBB900CA0324 /* SaveDiaryValue.swift */,
-				125EC07029B9BF13002834D0 /* ImageInfo.swift */,
+				12E4DCB029C144570044D7D4 /* ChatGPT */,
+				12E4DCAE29C1443D0044D7D4 /* Diary */,
+				12E4DCAF29C1444A0044D7D4 /* HumanVerification */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		12CB44C529B73D4200FE53D1 /* Extensions */ = {
@@ -200,6 +271,33 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		12E4DCAE29C1443D0044D7D4 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				12CB44C129B73D3500FE53D1 /* Diary.swift */,
+				12CB44C229B73D3500FE53D1 /* DiariesModel.swift */,
+				12A7AFE529BFFBB900CA0324 /* SaveDiaryValue.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		12E4DCAF29C1444A0044D7D4 /* HumanVerification */ = {
+			isa = PBXGroup;
+			children = (
+				125EC07029B9BF13002834D0 /* ImageInfo.swift */,
+			);
+			path = HumanVerification;
+			sourceTree = "<group>";
+		};
+		12E4DCB029C144570044D7D4 /* ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				12E4DCB129C144680044D7D4 /* ChatGPTRequestDTO.swift */,
+				12E4DCB429C1465D0044D7D4 /* ChatGPTResponseDTO.swift */,
+			);
+			path = ChatGPT;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,6 +316,7 @@
 			name = trafficLight;
 			packageProductDependencies = (
 				1227843429B7FD6900ED7491 /* ChatGPTSwift */,
+				1253CADA29C13EC9000781A5 /* Alamofire */,
 			);
 			productName = trafficLight;
 			productReference = 12CB44AC29B73D1300FE53D1 /* trafficLight.app */;
@@ -249,6 +348,7 @@
 			mainGroup = 12CB44A329B73D1300FE53D1;
 			packageReferences = (
 				1227843329B7FD6900ED7491 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+				1253CAD929C13EC9000781A5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 12CB44AD29B73D1300FE53D1 /* Products */;
 			projectDirPath = "";
@@ -277,17 +377,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1253CAE329C13EFA000781A5 /* CustomChatGPTAPI.swift in Sources */,
 				12CB44D129B73D4E00FE53D1 /* DiaryDetailView.swift in Sources */,
 				125EB8DC29B9AB7200D7877E /* HumanVerificationView.swift in Sources */,
+				12E4DCB529C1465D0044D7D4 /* ChatGPTResponseDTO.swift in Sources */,
 				12CB44C429B73D3500FE53D1 /* DiariesModel.swift in Sources */,
 				12CB44D029B73D4E00FE53D1 /* DiaryDetailCore.swift in Sources */,
+				12E4DCB729C146FC0044D7D4 /* CustomChatGPTService.swift in Sources */,
+				12E4DCB229C144680044D7D4 /* ChatGPTRequestDTO.swift in Sources */,
 				12CB44BF29B73D3000FE53D1 /* DividerHorizontal.swift in Sources */,
 				1227843F29B80ECD00ED7491 /* TrafficLightNavigationBar.swift in Sources */,
+				1253CADD29C13ED1000781A5 /* Router.swift in Sources */,
 				12CB44C729B73D4200FE53D1 /* UINavigationController+extensions.swift in Sources */,
 				12CB44CC29B73D4900FE53D1 /* DiaryListCore.swift in Sources */,
 				12CB44B029B73D1300FE53D1 /* trafficLightApp.swift in Sources */,
+				1253CADF29C13ED7000781A5 /* RouterManager.swift in Sources */,
 				125EC07129B9BF13002834D0 /* ImageInfo.swift in Sources */,
 				125EB8DE29B9AB7B00D7877E /* HumanVerificationCore.swift in Sources */,
+				1253CAE729C1400B000781A5 /* ErrorFactory.swift in Sources */,
+				1253CAE129C13EE4000781A5 /* BasicResponseDTO.swift in Sources */,
 				1227843B29B80D5800ED7491 /* DiaryWritingView.swift in Sources */,
 				12A7AFE629BFFBB900CA0324 /* SaveDiaryValue.swift in Sources */,
 				12CB44CB29B73D4900FE53D1 /* DiaryListView.swift in Sources */,
@@ -505,6 +613,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		1253CAD929C13EC9000781A5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -512,6 +628,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1227843329B7FD6900ED7491 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
 			productName = ChatGPTSwift;
+		};
+		1253CADA29C13EC9000781A5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1253CAD929C13EC9000781A5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

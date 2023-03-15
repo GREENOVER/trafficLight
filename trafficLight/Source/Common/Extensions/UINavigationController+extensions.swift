@@ -1,6 +1,6 @@
 //
 //  UINavigationController+extensions.swift
-//  Extension
+//  Common
 //
 //  Created by GREEN on 2023/03/07.
 //

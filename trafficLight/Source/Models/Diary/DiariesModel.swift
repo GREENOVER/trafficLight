@@ -1,6 +1,6 @@
 //
 //  DiariesModel.swift
-//  Model
+//  Models
 //
 //  Created by GREEN on 2023/03/07.
 //
